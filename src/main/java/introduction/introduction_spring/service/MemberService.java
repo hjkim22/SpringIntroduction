@@ -2,13 +2,11 @@ package introduction.introduction_spring.service;
 
 import introduction.introduction_spring.domain.Member;
 import introduction.introduction_spring.repository.MemberRepository;
-import introduction.introduction_spring.repository.MemoryMemberRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
-@Service
 public class MemberService {
 
     private final MemberRepository memberRepository;

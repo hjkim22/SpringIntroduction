@@ -1,8 +1,14 @@
 package introduction.introduction_spring.domain;
 
+import javax.persistence.*;
+
+@Entity
 public class Member {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // 자동 ID 생성
     private Long id;
+
     private String name;
 
     public Long getId() {
